@@ -14,31 +14,40 @@
   - Showcase frontend engineering and design skills.
   - Serve as an experimental concept, not for commercial or production use.
 
+## Demo Video
+
+[![Watch the Demo on Vimeo](https://i.postimg.cc/132Kmzvj/image.png)](https://vimeo.com/1145456806)
+
 ---
 
 ## Features (Extracted from Code)
 
 - **Interactive Map Visualization**
+
   - Uses [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/) for 3D map rendering.
   - Custom map style and animated transitions (fly-to, pitch, bearing, zoom).
   - Towers (landmarks) visualized as animated, glowing points and custom icons.
   - Click any tower to smoothly fly to its location and view details.
 
 - **Tower Details & Popups**
+
   - Cyberpunk-styled popup displays image, name, and description for each tower.
   - Glitch and neon effects on text and UI elements.
   - Responsive and animated popup transitions.
 
 - **Tower Management (Demo Only)**
+
   - Add, edit, or delete towers via a sidebar form (client-side only; changes are not persistent).
   - Form auto-fills map parameters (coordinates, pitch, bearing, zoom) from current map view.
   - Demo UUID generation for new towers.
 
 - **Custom Navigation Bar**
+
   - Scrollable, animated nav bar listing all towers.
   - Clicking a nav item triggers map fly-to and popup.
 
 - **Cyberpunk Visual Theme**
+
   - Animated SVG noise overlays.
   - Neon, glitch, and shadow effects throughout.
   - Custom SVG cursor.
@@ -52,6 +61,7 @@
 ## Tech Stack (Detected)
 
 - **Frontend:**
+
   - [Mapbox GL JS](https://www.npmjs.com/package/mapbox-gl) (`^3.11.0`)
   - [Vite](https://vitejs.dev/) (build tool, dev server)
   - Vanilla JavaScript (ES Modules)
@@ -93,22 +103,28 @@
 ## Pages & UI Modules
 
 - **Map Section:**
+
   - Fullscreen, interactive 3D map with animated transitions and custom style.
 
 - **Navigation Bar:**
+
   - Horizontally scrollable list of towers. Click to focus map and open popup.
 
 - **Tower Popup:**
+
   - Shows tower image, name, and description with glitch/neon effects.
   - Close button with sound and animated transitions.
 
 - **Menu Bar:**
+
   - Buttons for toggling add/edit tower panel and deleting/editing current tower (demo only).
 
 - **Cyberpunk Panel:**
+
   - Form for adding or editing towers. Auto-fills map view parameters. All changes are client-side and non-persistent.
 
 - **Animated Noise Overlay:**
+
   - SVG filter for animated noise effect over the UI.
 
 - **Custom Cursor:**

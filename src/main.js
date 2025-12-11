@@ -76,9 +76,6 @@ function createTowerPanel(itemName, itemDesc, id) {
   container.addEventListener("click", () => {
     clickSound.play();
 
-    removeClass(editButton, "hidden");
-    removeClass(deleteButton, "hidden");
-
     const selectedItem = towersData.features.find(
       (feature) => feature.id === id
     );
@@ -112,6 +109,8 @@ function flyToAndUpdatePopup(selectedItem) {
 
     if (lngDiff < tolerance && latDiff < tolerance) {
       removeClass(popup, "hidden");
+      removeClass(editButton, "hidden");
+      removeClass(deleteButton, "hidden");
       updatePopupContent(
         selectedItem.properties.name,
         selectedItem.properties.src,

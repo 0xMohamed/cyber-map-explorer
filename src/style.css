@@ -363,6 +363,10 @@ body,
   font-size: 14px;
   line-height: 1.6;
   color: #cccccc;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
 }
 
 .close-btn {
